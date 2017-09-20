@@ -1,0 +1,39 @@
+.root-wrap {
+  height: 100%;
+  width: 100%;
+}
+.home-wrap {
+  width: 100%;
+  height: 100%  !important;
+  background-color: #EEF4F9;
+  margin: 0 auto;
+}
+.home-wrap .home-left {
+  height: 100%;
+}
+.home-wrap .home-right {
+  height: 100%;
+  position: relative;
+  padding-top: 50px;
+}
+.home-wrap .home-left,
+.home-wrap .home-right {
+  transition: width 0.2s ease-in;
+}
+.home-wrap .router-view-wrap {
+  height: 100%;
+}
+.home-wrap .slot-hide {
+  opacity: 0;
+}
+.home-wrap .slot-wrap {
+  opacity: 1;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}

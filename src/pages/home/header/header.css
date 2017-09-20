@@ -1,0 +1,90 @@
+.header-wrap {
+  height: 50px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 50px;
+}
+.header-wrap .search-input {
+  display: inline-block;
+  width: 90%;
+}
+.header-wrap .search-input .el-input__inner {
+  border-radius: 21px;
+  padding-left: 30px;
+  background-color: #E9E9E9;
+  border-color: #E9E9E9;
+}
+.header-wrap .search-input .el-icon-search {
+  left: 15px;
+  font-size: 26px;
+}
+.header-wrap .icon-notice,
+.header-wrap .icon-user {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../../../assets/img/home/notice.svg') 0 0 no-repeat;
+  background-size: 100%;
+  position: relative;
+  top: 5px;
+}
+.header-wrap .icon-user {
+  width: 20px;
+  height: 20px;
+  background: url('../../../assets/img/home/user.svg') 0 0 no-repeat;
+  background-size: 100%;
+}
+.header-wrap .message .el-badge__content {
+  border-width: 0;
+  top: 30px;
+}
+.header-wrap .message:hover {
+  cursor: pointer;
+}
+.header-wrap .message:hover .icon-notice {
+  background: url('../../../assets/img/home/selected/notice.svg') 0 0 no-repeat;
+  background-size: 100%;
+}
+.header-wrap .user-info {
+  cursor: pointer;
+  font-size: 16px;
+  color: #697B8C;
+  text-align: right;
+  padding-right: 5px;
+}
+.header-wrap .user-info:hover .icon-user {
+  background: url('../../../assets/img/home/selected/user.svg') 0 0 no-repeat;
+  background-size: 100%;
+}
+.header-wrap .login-out span {
+  color: #697B8C;
+  cursor: pointer;
+}
+.header-wrap .login-out span:hover {
+  color: #20a0ff;
+}
+.header-wrap .el-badge__content {
+  background-color: #32C2AE;
+}
+.header-wrap .btn-not-see {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+.message-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 88888;
+}

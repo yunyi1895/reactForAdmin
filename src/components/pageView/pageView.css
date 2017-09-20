@@ -1,0 +1,33 @@
+.page-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+.page-view .ant-spin-nested-loading {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.page-view .ant-spin-nested-loading .ant-spin {
+  max-height: none;
+}
+.loading-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #EEF4F9;
+  z-index: 9998;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}

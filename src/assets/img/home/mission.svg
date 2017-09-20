@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/mission/disable</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/mission/disable" fill="#E9E9ED">
+            <path d="M15,1.5037384 C15,0.673246621 14.3361142,0 13.5069036,0 L1.49309635,0 C0.668482012,0 0,0.663885859 0,1.49309635 L1.953125e-08,13.5069036 C1.953125e-08,14.331518 0.681540293,15 1.5026227,15 L13.4544441,15 C14.2843197,15 14.9598837,14.3352549 14.9634017,13.5050869 L15,4.86866668 L7.5478667,11.6773333 L7.014,12.2065333 L6.48293332,11.6773333 L2.32866668,7.14693332 L3.41693332,6.1296 L7.0074667,10.142 L15,2.75 L15,1.5037384 L15,1.5037384 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

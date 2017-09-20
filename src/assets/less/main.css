@@ -1,0 +1,1236 @@
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+* {
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  font-family: 'Microsoft YaHei';
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+[class^="el-"] {
+  font-size: 12px;
+}
+.el-table td {
+  height: 36px;
+}
+.el-submenu__title {
+  height: 46px;
+  line-height: 46px;
+}
+.el-form-item__error {
+  color: #ff4949!important;
+}
+.el-table td {
+  height: 36px;
+}
+.el-input__inner {
+  height: 30px;
+  color: #485669;
+}
+.el-button--primary {
+  color: #fff;
+}
+.el-select .el-input__inner {
+  color: #485669;
+}
+.el-input-group__prepend .el-select .el-input__inner {
+  color: #485669;
+}
+.el-input-group__prepend .el-select .el-input__inner:hover {
+  color: #485669;
+}
+.el-checkbox__inner {
+  width: 15px;
+  height: 15px;
+}
+.el-checkbox__inner:after {
+  height: 7px;
+  left: 4px;
+}
+.el-table .cell,
+.el-table th div {
+  padding: 0 5px;
+}
+.el-select {
+  min-width: 110px;
+}
+.el-table th {
+  color: #333;
+  font-weight: normal;
+}
+.el-dialog--large {
+  width: 80%;
+}
+.el-button {
+  padding: 8px 10px;
+}
+.el-table tbody {
+  color: #1f2d3d;
+}
+.el-table .caret-wrapper {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.el-table th > .cell:hover > .caret-wrapper {
+  opacity: 1;
+}
+.c-el-table-btn {
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: #8E9CAA;
+}
+.el-time-panel__content::after,
+.el-time-panel__content::before {
+  top: 55.3%;
+}
+.el-select-dropdown__item {
+  border-bottom: 1px solid #c6d8e8;
+}
+.el-loading-mask.is-fullscreen {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.el-tree-node > .el-tree-node__children {
+  overflow: visible;
+}
+.el-table__fixed {
+  box-shadow: none;
+}
+.el-dialog__wrapper,
+.form-dialog {
+  z-index: 2035;
+}
+.el-form-item__label {
+  padding-right: 6px;
+}
+body {
+  font-size: 12px;
+  min-width: 1215px;
+  overflow: auto;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.cf:after,
+.cf:before {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.cf {
+  zoom: 1;
+}
+.c-icon-circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #E5E6EA;
+  border-radius: 5px;
+}
+.c-btn-ele {
+  padding: 5px 19px;
+  border-radius: 15px;
+  color: #697B8C;
+}
+.c-btn-2 {
+  padding: 8px 19px;
+}
+.c-box-shadow {
+  box-shadow: 0 2px 8px #D4DFE9;
+}
+.c-bottom-shadow {
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px #697B8C;
+}
+.c-box-h {
+  height: 42px;
+  line-height: 40px;
+  background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.c-box-h .el-select {
+  line-height: 30px;
+}
+.c-bottom-bd {
+  border-bottom: 1px solid #D3DCE6;
+}
+.c-ml10 {
+  margin-left: 10px;
+}
+.c-ml20 {
+  margin-left: 20px;
+}
+.c-ml30 {
+  margin-left: 30px;
+}
+.c-w120 {
+  width: 120px;
+}
+.c-w100 {
+  width: 100px;
+}
+.c-w200 {
+  width: 200px;
+}
+.c-w250 {
+  width: 250px;
+}
+.c-w300 {
+  width: 300px;
+}
+.c-w150 {
+  width: 150px;
+}
+.c-p20 {
+  width: 20%;
+}
+.c-p22 {
+  width: 22%;
+}
+.c-p30 {
+  width: 30%;
+}
+.c-ellipsis-1 {
+  overflow:  hidden;
+  text-overflow: ellipsis;
+  white-space:  nowrap;
+}
+.c-select-date {
+  display: inline;
+  width: 350px;
+}
+.c-click {
+  color: #3F93F5;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.c-btn-text-ar {
+  text-align: right;
+}
+.el-tabs--border-card .el-tabs__header {
+  background-color: #f6fbfe;
+  margin: 0;
+}
+.c-store-detail .el-dialog--large {
+  min-width: 900px;
+}
+.c-store-detail .el-dialog__body {
+  padding-top: 0;
+}
+.c-store-detail .el-dialog__headerbtn {
+  position: relative;
+  z-index: 9;
+}
+.c-label-title {
+  color: #3F93F5;
+  line-height: 36px;
+  padding-left: 20px;
+}
+.layout-table {
+  display: table;
+  width: 100%;
+}
+.layout-row {
+  display: table-row;
+  width: 100%;
+}
+.layout-col {
+  display: table-cell;
+  width: 50%;
+}
+.detail-table {
+  display: table;
+  width: 100%;
+  color: #99A9BF;
+}
+.detail-table .detail-row {
+  display: table-row;
+}
+.detail-table .detail-col {
+  display: table-cell;
+  height: 31px;
+  vertical-align: bottom;
+  padding-bottom: 4px;
+  padding-top: 5px;
+  position: relative;
+}
+.detail-table .title {
+  padding-right: 28px;
+  text-align: right;
+  width: 20%;
+  padding-bottom: 6px;
+}
+.detail-table .title.stake-code {
+  vertical-align: top;
+  padding-top: 15px;
+}
+.detail-table .text {
+  color: #697B8C;
+  border-bottom: 1px solid #D3DCE6;
+  padding-left: 5px;
+  width: 30%;
+}
+.detail-table .text span {
+  line-height: 16px;
+}
+.detail-table .text .electric {
+  position: absolute;
+  right: 5px;
+}
+.detail-table .text.lat-long {
+  border-bottom: none;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+.detail-table .text.lat-long .lat,
+.detail-table .text.lat-long .long {
+  display: table-cell;
+  height: 31px;
+  border-bottom: 1px solid #D3DCE6;
+  margin-right: 10px;
+  vertical-align: bottom;
+  padding: 0 5px 5px;
+}
+.detail-table .text.lat-long .is-pos {
+  display: table-cell;
+  width: 10px;
+}
+.detail-table .text.stake-info {
+  border-bottom: none;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+.detail-table .stake-table {
+  display: table;
+  width: 100%;
+}
+.detail-table .stake-table .stake-row {
+  display: table-row;
+  width: 100%;
+}
+.detail-table .stake-table .stake-col {
+  display: table-cell;
+  height: 31px;
+  vertical-align: bottom;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  position: relative;
+  width: 50%;
+}
+.detail-table .stake-table .stake-num {
+  border-bottom: 1px solid #D3DCE6;
+  padding-left: 5px;
+}
+.detail-table .stake-table .paking-num .paking-text {
+  display: table-cell;
+  width: 60%;
+  min-width: 70px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.detail-table .stake-table .paking-num .num {
+  display: table-cell;
+  border-bottom: 1px solid #D3DCE6;
+  width: 40%;
+  padding-left: 5px;
+}
+.detail-table .title-input {
+  vertical-align: middle;
+  padding-bottom: 0;
+  padding-top: 10px;
+}
+.detail-table .text-input {
+  margin: 5px 0;
+  border-bottom: none;
+}
+.detail-table .btn-input {
+  text-align: right;
+  padding-top: 50px;
+}
+.detail-table .el-button + .el-button {
+  margin-left: 30px;
+}
+.detail-table .star-required {
+  padding-right: 10px;
+  color: #F53333;
+  vertical-align: sub;
+}
+.c-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+.c-icon-store {
+  background: url('../img/normal/store.svg') 0 0 no-repeat;
+  background-size: 100%;
+}
+.c-icon-add {
+  background: url('../img/normal/add.svg') 0 0 no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  vertical-align: bottom;
+}
+.c-icon-search {
+  background: url('../img/normal/search.svg') 0 0 no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+.c-el-icon-loading {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  background: url('../img/authority/loading.svg') 0 0 no-repeat;
+}
+.c-icon-add2 {
+  font-weight: bold;
+  border: 2px solid #20A0FF;
+  border-radius: 13px;
+  color: #20A0FF;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 24px;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.c-icon-delete2 {
+  color: #20A0FF;
+  cursor: pointer;
+  padding-left: 10px;
+}
+.c-nav-crumb {
+  height: 37px;
+  line-height: 37px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.c-nav-crumb .el-breadcrumb__item:last-child .el-breadcrumb__item__inner {
+  color: #6A7B97;
+}
+.c-nav-crumb i {
+  margin-right: 10px;
+}
+.c-foot-btns {
+  font-size: 12px;
+  text-align: center;
+  margin: 10px auto;
+}
+.c-foot-btns div {
+  display: inline-block;
+  width: 60px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 6px;
+  margin: 0 6px;
+  cursor: pointer;
+}
+.c-foot-btns div.confirm {
+  color: #fff;
+  background-color: #20a0ff;
+}
+.c-foot-btns div.cancel {
+  border: 1px solid #d3dce6;
+}
+.c-foot-btns div.disabled {
+  background-color: #eee;
+  border: 1px solid #d3dce6;
+  pointer-events: none;
+}
+.c-img-view .el-dialog--small {
+  width: 600px;
+  height: 312px;
+  top: 50%!important;
+  margin-top: -156px;
+}
+.c-img-view .el-dialog__header {
+  display: none;
+}
+.c-img-view .el-dialog__body {
+  padding: 6px;
+}
+.c-img-view .layout-table {
+  width: 100%;
+  height: 300px;
+}
+.c-img-view .layout-col {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #fff;
+}
+.c-img-view .layout-col img {
+  max-width: 100%;
+  max-height: 300px;
+}
+.c-img-view .el-carousel__arrow {
+  width: 50px;
+  height: 50px;
+  background: none;
+}
+.c-img-view .el-icon-arrow-right,
+.c-img-view .el-icon-arrow-left {
+  font-size: 26px;
+  color: #838383;
+}
+.c-img-view .el-carousel__arrow--right {
+  right: 0;
+}
+.c-img-view .el-carousel__arrow--left {
+  left: 0;
+}
+.c-img-view .el-icon-arrow-left {
+  left: 0;
+}
+.c-img-view .el-carousel__button {
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #BAB9B9;
+}
+.c-img-view .el-carousel__indicator .is-active .el-carousel__button {
+  background-color: #919191;
+}
+.c-el-upload {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  display: inline-block;
+  border: 1px solid #C0CCDA;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.c-el-upload .el-upload--text {
+  position: relative;
+  top: 16px;
+}
+.c-show-handover {
+  position: absolute;
+  right: 50px;
+  top: 20px;
+}
+.el-select-dropdown {
+  max-height: 330px;
+  overflow: auto;
+}
+.el-select-dropdown .suns-tip {
+  color: #8391a5;
+  padding-left: 10px;
+  font-size: 10px;
+}
+.el-select-dropdown .suns-tip-pp {
+  color: #8391a5;
+  padding-left: 25px;
+  font-size: 10px;
+}
+.el-select-dropdown .suns-tip-ppp {
+  color: #8391a5;
+  padding-left: 40px;
+  font-size: 10px;
+}
+.choosed {
+  background-color: #ccc;
+}
+.custom-disabled.el-input.is-disabled .el-input__inner {
+  background-color: #fff;
+}
+.c-export-excel {
+  text-align: right;
+  padding-right: 20px;
+  height: 34px;
+  line-height: 34px;
+  background-color: #fff;
+  margin-top: 10px;
+  position: absolute;
+  width: 100%;
+  top: 130px;
+}
+.c-export-excel .c-btn {
+  height: 24px;
+  line-height: 24px;
+}
+.c-pagination {
+  text-align: center;
+  background-color: #fff;
+  padding: 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.c-page-content {
+  position: relative;
+  padding-top: 179px;
+  padding-bottom: 58px;
+  height: 100%;
+}
+.c-search-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.c-search-wrap .el-col-3 {
+  text-align: right;
+}
+.c-pageview-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 37px;
+}
+.reset-ele-form .el-input__inner {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  padding-bottom: 0;
+  padding-top: 10px;
+  font-size: 12px;
+}
+.reset-ele-form .el-select > .el-input > .el-input__inner,
+.reset-ele-form .el-date-editor--daterange > .el-input__inner {
+  border-radius: 4px;
+  border: 1px solid #bfcbd9;
+  font-size: 12px;
+  padding: 3px 10px;
+}
+.reset-ele-form .el-date-editor--date > .el-input__inner {
+  border-radius: 4px;
+  border: 1px solid #bfcbd9;
+  font-size: 12px;
+  padding: 3px 10px;
+}
+.reset-ele-form .el-date-editor--month > .el-input__inner {
+  border-radius: 4px;
+  border: 1px solid #bfcbd9;
+  font-size: 12px;
+  padding: 3px 10px;
+}
+.reset-ele-form .c-w300,
+.reset-ele-form .c-w200 {
+  top: -3px;
+}
+.reset-ele-form .el-form-item__error {
+  top: 70%;
+}
+.reset-ele-form .el-form-item {
+  margin-bottom: 20px;
+}
+.reset-ele-form .form-address .el-form-item {
+  display: inline-block;
+}
+.reset-ele-form .address {
+  position: relative;
+  top: 3px;
+  left: 5px;
+}
+.reset-ele-form .select-form .el-form-item__error {
+  top: 90%;
+}
+.reset-ele-form .submit-btn {
+  text-align: center;
+  margin-top: 50px;
+}
+.reset-ele-form .submit-btn .el-button + .el-button {
+  margin-left: 50px;
+}
+.reset-ele-form .submit-btnR {
+  text-align: right;
+  margin-top: 50px;
+}
+.reset-ele-form .submit-btnR .el-button + .el-button {
+  margin-left: 50px;
+}
+.reset-ele-form .el-input.is-disabled .el-input__inner {
+  background-color: #fff;
+  cursor: text;
+  color: #485669;
+}
+.allinfo-logs {
+  background-color: #fff;
+  height: 100%;
+  position: relative;
+  padding-top: 54px;
+}
+.allinfo-logs .tabs-header {
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
+.allinfo-logs .label-text .label-name {
+  color: #333;
+  font-weight: 500;
+}
+.form-add {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 37px;
+}
+.form-ruleForm {
+  background-color: #fff;
+  height: 100%;
+  overflow: auto;
+  padding: 15px 7%;
+}
+.form-ruleForm .form-first-form {
+  margin-top: 25px;
+}
+.c-row {
+  height: 100%;
+}
+.c-row .col_right {
+  height: 100%;
+  border-right: 2px solid #eef4f9;
+  padding: 40px 36px 36px;
+}
+.c-row .col_left {
+  height: 100%;
+  padding: 40px 36px 36px;
+}
+.w1400 {
+  max-width: 1400px;
+}
+.w700 {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.w900 {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.date100 {
+  width: 100% !important;
+}
+.label-title {
+  color: #3f93f5;
+  line-height: 36px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.base-wrap .c-bottom-bd {
+  width: 100%;
+  display: inline-block;
+}
+.text-center {
+  text-align: center;
+}
+.base-wrap .text-only {
+  line-height: 30px;
+}
+.c-tab-pane-bottom {
+  border-top: 1px solid #D3DCE6;
+}
+.c-tab-pane-content {
+  background-color: #fff;
+}
+.c-tabs-pane-template {
+  position: relative;
+  height: 100%;
+  padding-top: 40px;
+}
+.c-tabs-pane-template .tabs-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.c-tab-pane-content {
+  position: relative;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 59px;
+}
+.c-tab-pane-content .btns-wrap {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.c-tabs-wrap {
+  position: relative;
+  height: 100%;
+  padding-top: 37px;
+}
+.c-tabs-content {
+  background-color: #fff;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 54px;
+}
+.c-tabs-content .tabs-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.c-tab-content {
+  height: 100%;
+  overflow: auto;
+  padding-top: 20px;
+}
+.c-tab-content .el-col {
+  padding: 15px;
+}
+.c-tabs {
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+  padding-top: 57px;
+}
+.c-tabs .el-tabs__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.c-tabs .el-tabs__content {
+  height: 100%;
+  overflow: auto;
+  padding: 15px 10%;
+}
+.c-tabs .el-tab-pane {
+  height: 100%;
+}
+.c-el-form .el-input.is-disabled .el-input__inner,
+.c-el-form .el-textarea.is-disabled .el-textarea__inner {
+  background-color: #fff;
+  border-radius: 0;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+.c-el-form .el-select .el-input.is-disabled .el-input__icon {
+  display: none;
+}

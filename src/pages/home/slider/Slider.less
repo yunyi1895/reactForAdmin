@@ -1,0 +1,79 @@
+@active_color: #32C2AE;
+@left_color: #EDEDED;
+
+@slider_wrap: slider-wrap;
+.icon-base(){
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+.@{slider_wrap} {
+	height: 100%; position: relative;
+	
+	.slider-top{height: 80px; position: absolute; top: 0; left: 0; width: 100%; z-index: 1; background-color: #555C78; line-height: 80px; text-align: center; overflow: hidden;
+		.toggle-menu-icon{display: inline-block; width: 18px; height: 18px; background: url('../../../assets/img/home/back_right.svg') 0 0 no-repeat; background-size: 100%; margin-top: 24px; transform: rotate(180deg);
+			&.back{transform: rotate(0);}
+		}
+		.dispatch-system{color: #fff; font-size: 17px;position: relative;top: 0; margin-left: 14px; display: inline-block; overflow: hidden; width: 82px; height: 50px;}
+		.dispatch-system.hide{display: none;}
+	}
+	.slider-menu{height: 100%; padding-top: 100px; background-color: #4E546C;
+		.el-icon-arrow-down{font-size: 0;}
+		
+		.nav-item-name{transition: opacity .2s ease-in; vertical-align: middle; padding-left: 6px;}
+		&.no-spread{
+			.el-submenu{position: relative;}
+			// .el-menu{position: absolute; right: -160px; top: 0; width: 160px; z-index: 9;}
+			// .el-menu{display: none;}
+			// &伪类代表父元素
+			.ant-menu-submenu{
+				display: none;
+			}
+			.ant-menu-item{
+				display: none
+			}
+			.nav-item-name{opacity: 0;}
+		}
+	}
+	.el-submenu .el-menu-item{
+		span{padding-left: 6px;}
+		min-width: 0;
+		padding-left: 40px;
+	}
+	 .el-menu{
+			
+				transition:all  2s;
+				-webkit-transition:all 2s; 
+				
+			}
+	.icon-my{.icon-base(); background: url('../../../assets/img/home/mission.svg') 0 0 no-repeat; background-size: 100%;}
+	.icon-task{.icon-base(); background: url('../../../assets/img/home/task.svg') 0 0 no-repeat; background-size: 100%;}
+	.icon-shop{.icon-base(); background: url('../../../assets/img/home/shop.svg') 0 0 no-repeat; background-size: 100%;}
+	//将icon-my等中加入icon-base的css样式
+	.icon-user{.icon-base(); background: url('../../../assets/img/home/account.svg') 0 0 no-repeat; background-size: 100% 100%;}
+	.icon-circle{display: inline-block; width: 10px; height: 10px; border: 2px solid #EDEDED; border-radius: 5px;}
+	.el-menu--dark .el-submenu .el-menu{background-color: #4E546C;}
+	// .el-submenu.is-opened{
+	.el-submenu__title:hover{
+		.nav-item-name{color: @active_color;}
+		.icon-task{background: url('../../../assets/img/home/selected/task.svg') 0 0 no-repeat; background-size: 100%;}
+		.icon-shop{background: url('../../../assets/img/home/selected/shop.svg') 0 0 no-repeat; background-size: 100%;}
+		.icon-user{background: url('../../../assets/img/home/selected/account.svg') 0 0 no-repeat; background-size: 100% 100%;}
+		.icon-my{background: url('../../../assets/img/home/selected/mission.svg') 0 0 no-repeat; background-size: 100%;}
+	}
+
+	.el-menu-item:hover, .el-menu-item.is-active{color: @active_color;
+		.icon-circle{border-color: @active_color;}
+		.icon-my{background: url('../../../assets/img/home/selected/mission.svg') 0 0 no-repeat; background-size: 100%;}
+		.icon-task{background: url('../../../assets/img/home/selected/task.svg') 0 0 no-repeat; background-size: 100%;}
+		.icon-shop{background: url('../../../assets/img/home/selected/shop.svg') 0 0 no-repeat; background-size: 100%;}
+	}
+	.ant-menu-dark .ant-menu-inline.ant-menu-sub{
+		background: #4e546c;
+	}
+	.ant-menu.ant-menu-dark .ant-menu-item-selected{
+		background: #4e546c;
+		color: #32c2ae;
+	}
+}

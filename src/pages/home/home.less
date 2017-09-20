@@ -1,0 +1,24 @@
+@home_wrap: home-wrap;
+@router_height: calc(100% - 100px);
+.root-wrap{
+    height: 100%;
+    width:100%;
+}
+.@{home_wrap} {
+	width: 100%; height: 100%  !important; background-color: #EEF4F9; margin: 0 auto;
+	.home-left{height: 100%;}
+	.home-right{height: 100%; position: relative; padding-top: 50px;}
+	.home-left, .home-right{transition: width .2s ease-in;}
+	.router-view-wrap{height: 100%;}
+	.slot-hide{opacity: 0;}
+	.slot-wrap{opacity: 1;}
+}
+    .fade-enter-active,
+    .fade-leave-active {
+        transition: opacity .5s
+    }
+
+    .fade-enter,
+    .fade-leave-active {
+        opacity: 0
+    }
