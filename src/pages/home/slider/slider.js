@@ -121,7 +121,7 @@ class Test extends React.Component {
                     <span
                         className={menuSpread
                         ? 'dispatch-system '
-                        : 'dispatch-system hide '}>会员管理</span>
+                        : 'dispatch-system hide '}>XX管理</span>
                 </div>
                 <Menu
                     openKeys={openKeys}

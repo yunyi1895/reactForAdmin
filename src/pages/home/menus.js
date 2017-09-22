@@ -3,7 +3,7 @@ export const menus = {
     "data": {
         "id": 68,
         "resKey": "4-j5KtdGSeSe5QgvVbm6vA",
-        "resourcesName": "会员系统",
+        "resourcesName": "XX系统",
         "resourcesUrl": "evcard-mmp",
         "urlType": 0,
         "own": 1,
